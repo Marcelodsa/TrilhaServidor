@@ -56,7 +56,7 @@ public class MessageManager extends Thread{
 
     public void notifyPlayerToStart(){
         try {
-            String msg= "TURN:";
+            String msg= "TURN:true";
             outputStream.writeObject(msg);
         } catch (IOException e) {
             e.printStackTrace();
