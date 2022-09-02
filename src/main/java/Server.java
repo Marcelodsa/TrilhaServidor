@@ -13,7 +13,7 @@ public class Server {
 
     private void initServer() {
         try {
-            server = new ServerSocket(1234);
+            server = new ServerSocket(3456);
         } catch (IOException e) {
             System.out.println("Falha ao iniciar socket");
             e.printStackTrace();
@@ -50,6 +50,7 @@ public class Server {
                     messageManagers.add(messageManagerClient1);
                     messageManagers.add(messageManagerClient2);
                     randomColor();
+                    setPlayerToStart();
                 }
             }
         } catch(Exception e) {
